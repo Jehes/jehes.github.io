@@ -1,6 +1,8 @@
-document.getElementById("divine").hidden = true;
-var IdTn = new Array()
-function IdTnEvent() {
-    IdTn.push(this.attr("id") + n)
+let frames = document.getElementsByClassName("t");
+let currentframe = 0;
+function FramesChanger() {
+    frames[currentframe].style.display = "none";
+    currentframe = (currentframe + 1) % frames.length;
+    frames[currentframe].style.display = "block";
 }
-var count = 0
+setInterval(FramesChanger)

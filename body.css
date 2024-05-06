@@ -24,3 +24,8 @@ h1 {
 p {
     position: absolute;
 }
+
+pre {
+    display: none;
+    text-align: center;
+}
